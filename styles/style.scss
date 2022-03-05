@@ -1,0 +1,293 @@
+@mixin platillos {
+    padding: 2rem;
+    h4{
+        font-size: 1.5rem;
+    }
+    span{
+        font-size:1.5rem;
+    }
+    .precio{
+        font-weight: 900;
+        font-size: 1.5rem;
+        position: relative;
+        bottom: 2rem;
+        margin-left: 1rem;
+    }
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+main{
+    header{
+        height: 100vh;
+        nav{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #000;
+            figure{
+                width: 50px;
+                height: 50px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            ul{
+                list-style: none;
+                display: flex; 
+                justify-content: space-between;
+                gap: 2rem;
+                li{
+                    color: #fff;
+                }
+            }
+        }
+        .banner-principal{
+            width: 100%;
+            height: 95vh;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        button{
+            position: absolute;
+            top: 65rem;
+            right: 30rem;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            border: none;
+            background-color: #000;
+            a{
+                text-decoration: none;
+                color: #fff;
+                font-weight: 900;
+            }
+
+        }
+        button:hover{
+            background-color: #fff;
+            a{
+                color: #000;
+            }
+        }
+    }
+    .platillo-principal{
+        background-color: #fff;
+        margin-top: 3rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        .text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h2{
+                font-size: 5rem;
+            }
+            span{
+                font-size: 3rem;
+            }
+            p{
+                margin-top: 1.5rem;
+                font-size: 1.5rem;
+                width: 80%;
+            }
+        }
+        .img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            figure{
+                width: 80%;
+                height: 80%;
+                margin-bottom: 4rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .imagen-overlay{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
+        color: #fff;
+        h3{
+            font-size: 3rem;
+        }
+        span{
+            font-size: 2rem;
+        }
+        p{
+            margin-top: 1.5rem;
+            font-size: 1.2rem;
+            width: 80%;
+            text-align: center;
+        }
+        figure{
+            width: 100%;
+            height: 200px;
+            position: absolute;
+            z-index: -2;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                opacity: 80%;
+            }
+        }
+    }
+    .menu-platillos{
+        margin-top: 5rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h3{
+            font-size: 3rem;
+        }
+        span{
+            font-size: 2rem;
+        }
+        .lista-platillos{
+            display: grid;
+            margin-top: 2rem;
+            grid-template-areas: 
+            "div1"
+            "div2"
+            "div3"
+            "div4"
+            "div5"
+            "div6"
+            "div7"
+            "div8"
+            ;
+            gap: 3rem;
+            .uno{
+                grid-area: div1;
+                @include platillos;
+            }
+            .dos{
+                grid-area: div2;
+                @include platillos;
+            }
+            .tres{
+                grid-area: div3;
+                @include platillos;
+            }
+            .cuatro{
+                grid-area: div4;
+                @include platillos;
+            }.cinco{
+                grid-area: div5;
+                @include platillos;
+            }.seis{
+                grid-area: div6;
+                @include platillos;
+            }
+            .siete{
+                grid-area: div7;
+                @include platillos;
+            }
+            .ochos{
+                grid-area: div8;
+                @include platillos;
+            }
+        }
+    }
+    .icons-menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        gap: 3rem;
+        margin-top: 3rem;
+        div{
+            span{
+                font-size: 1.5rem;
+                color: #fff;
+            }
+        }
+        figure{
+            width: 100%;
+            height: 100px;
+            position: absolute;
+            z-index: -2;
+            background-color: aliceblue;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .reservation{
+        background-color: #fff;
+        margin-top: 5rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        .text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h2{
+                font-size: 5rem;
+            }
+            span{
+                font-size: 3rem;
+            }
+            p{
+                margin-top: 1.5rem;
+                font-size: 1.5rem;
+                width: 80%;
+            }
+            a{
+                font-size: 1.5rem;
+                text-decoration: none;
+                color: #000;
+                font-weight: 900;
+                margin-top: 2rem;
+                border-bottom: 2.5px solid black;
+            }
+        }
+        .img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            figure{
+                width: 80%;
+                height: 80%;
+                margin-bottom: 4rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+footer{
+    text-align: center;
+    margin-top: 5rem;
+    padding: 2rem 0;
+    border-top: 2px solid rgba(0, 0, 0, 0.411);
+    font-size: 1.5rem;
+}

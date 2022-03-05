@@ -1,0 +1,544 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+main header {
+  height: 100vh;
+}
+
+main header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #000;
+}
+
+main header nav figure {
+  width: 50px;
+  height: 50px;
+}
+
+main header nav figure img {
+  width: 100%;
+  height: 100%;
+}
+
+main header nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2rem;
+}
+
+main header nav ul li {
+  color: #fff;
+}
+
+main header .banner-principal {
+  width: 100%;
+  height: 95vh;
+}
+
+main header .banner-principal img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main header button {
+  position: absolute;
+  top: 65rem;
+  right: 30rem;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  border: none;
+  background-color: #000;
+}
+
+main header button a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 900;
+}
+
+main header button:hover {
+  background-color: #fff;
+}
+
+main header button:hover a {
+  color: #000;
+}
+
+main .platillo-principal {
+  background-color: #fff;
+  margin-top: 3rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+}
+
+main .platillo-principal .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .platillo-principal .text h2 {
+  font-size: 5rem;
+}
+
+main .platillo-principal .text span {
+  font-size: 3rem;
+}
+
+main .platillo-principal .text p {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  width: 80%;
+}
+
+main .platillo-principal .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .platillo-principal .img figure {
+  width: 80%;
+  height: 80%;
+  margin-bottom: 4rem;
+}
+
+main .platillo-principal .img figure img {
+  width: 100%;
+  height: 100%;
+}
+
+main .imagen-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3rem;
+  color: #fff;
+}
+
+main .imagen-overlay h3 {
+  font-size: 3rem;
+}
+
+main .imagen-overlay span {
+  font-size: 2rem;
+}
+
+main .imagen-overlay p {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  width: 80%;
+  text-align: center;
+}
+
+main .imagen-overlay figure {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  z-index: -2;
+}
+
+main .imagen-overlay figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 80%;
+}
+
+main .menu-platillos {
+  margin-top: 5rem;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .menu-platillos h3 {
+  font-size: 3rem;
+}
+
+main .menu-platillos span {
+  font-size: 2rem;
+}
+
+main .menu-platillos .lista-platillos {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 2rem;
+      grid-template-areas: "div1" "div2" "div3" "div4" "div5" "div6" "div7" "div8";
+  gap: 3rem;
+}
+
+main .menu-platillos .lista-platillos .uno {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: div1;
+  padding: 2rem;
+}
+
+main .menu-platillos .lista-platillos .uno h4 {
+  font-size: 1.5rem;
+}
+
+main .menu-platillos .lista-platillos .uno span {
+  font-size: 1.5rem;
+}
+
+main .menu-platillos .lista-platillos .uno .precio {
+  font-weight: 900;
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 2rem;
+  margin-left: 1rem;
+}
+
+main .menu-platillos .lista-platillos .dos {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: div2;
+  padding: 2rem;
+}
+
+main .menu-platillos .lista-platillos .dos h4 {
+  font-size: 1.5rem;
+}
+
+main .menu-platillos .lista-platillos .dos span {
+  font-size: 1.5rem;
+}
+
+main .menu-platillos .lista-platillos .dos .precio {
+  font-weight: 900;
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 2rem;
+  margin-left: 1rem;
+}
+
+main .menu-platillos .lista-platillos .tres {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: div3;
+  padding: 2rem;
+}
+
+main .menu-platillos .lista-platillos .tres h4 {
+  font-size: 1.5rem;
+}
+
+main .menu-platillos .lista-platillos .tres span {
+  font-size: 1.5rem;
+}
+
+main .menu-platillos .lista-platillos .tres .precio {
+  font-weight: 900;
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 2rem;
+  margin-left: 1rem;
+}
+
+main .menu-platillos .lista-platillos .cuatro {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: div4;
+  padding: 2rem;
+}
+
+main .menu-platillos .lista-platillos .cuatro h4 {
+  font-size: 1.5rem;
+}
+
+main .menu-platillos .lista-platillos .cuatro span {
+  font-size: 1.5rem;
+}
+
+main .menu-platillos .lista-platillos .cuatro .precio {
+  font-weight: 900;
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 2rem;
+  margin-left: 1rem;
+}
+
+main .menu-platillos .lista-platillos .cinco {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: div5;
+  padding: 2rem;
+}
+
+main .menu-platillos .lista-platillos .cinco h4 {
+  font-size: 1.5rem;
+}
+
+main .menu-platillos .lista-platillos .cinco span {
+  font-size: 1.5rem;
+}
+
+main .menu-platillos .lista-platillos .cinco .precio {
+  font-weight: 900;
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 2rem;
+  margin-left: 1rem;
+}
+
+main .menu-platillos .lista-platillos .seis {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: div6;
+  padding: 2rem;
+}
+
+main .menu-platillos .lista-platillos .seis h4 {
+  font-size: 1.5rem;
+}
+
+main .menu-platillos .lista-platillos .seis span {
+  font-size: 1.5rem;
+}
+
+main .menu-platillos .lista-platillos .seis .precio {
+  font-weight: 900;
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 2rem;
+  margin-left: 1rem;
+}
+
+main .menu-platillos .lista-platillos .siete {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: div7;
+  padding: 2rem;
+}
+
+main .menu-platillos .lista-platillos .siete h4 {
+  font-size: 1.5rem;
+}
+
+main .menu-platillos .lista-platillos .siete span {
+  font-size: 1.5rem;
+}
+
+main .menu-platillos .lista-platillos .siete .precio {
+  font-weight: 900;
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 2rem;
+  margin-left: 1rem;
+}
+
+main .menu-platillos .lista-platillos .ochos {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  grid-area: div8;
+  padding: 2rem;
+}
+
+main .menu-platillos .lista-platillos .ochos h4 {
+  font-size: 1.5rem;
+}
+
+main .menu-platillos .lista-platillos .ochos span {
+  font-size: 1.5rem;
+}
+
+main .menu-platillos .lista-platillos .ochos .precio {
+  font-weight: 900;
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 2rem;
+  margin-left: 1rem;
+}
+
+main .icons-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+main .icons-menu div span {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+main .icons-menu figure {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  z-index: -2;
+  background-color: aliceblue;
+}
+
+main .icons-menu figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .reservation {
+  background-color: #fff;
+  margin-top: 5rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+}
+
+main .reservation .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .reservation .text h2 {
+  font-size: 5rem;
+}
+
+main .reservation .text span {
+  font-size: 3rem;
+}
+
+main .reservation .text p {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  width: 80%;
+}
+
+main .reservation .text a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: 900;
+  margin-top: 2rem;
+  border-bottom: 2.5px solid black;
+}
+
+main .reservation .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .reservation .img figure {
+  width: 80%;
+  height: 80%;
+  margin-bottom: 4rem;
+}
+
+main .reservation .img figure img {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  text-align: center;
+  margin-top: 5rem;
+  padding: 2rem 0;
+  border-top: 2px solid rgba(0, 0, 0, 0.411);
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=style.css.map */
